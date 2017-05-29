@@ -1,6 +1,6 @@
 (function () {
-  const templates = document.querySelectorAll('template');
-  const wrapper = document.querySelector('main');
+  const templates = document.querySelectorAll(`template`);
+  const wrapper = document.querySelector(`main`);
 
   const switchTemplate = (count) => {
     const templateHtml = templates[count].innerHTML;
@@ -21,19 +21,20 @@
 
       count--;
 
-      switchTemplate(count);
+      return switchTemplate(count);
     }
 
     if (isAltKey && event.keyCode === 39) {
-      if (count === (templates.length-1)) {
+      if (count === (templates.length - 1)) {
         return false;
       }
       count++;
 
-      switchTemplate(count);
+      return switchTemplate(count);
     }
+
   };
 
-  document.addEventListener('keydown', renderRequiredTemplate);
+  document.addEventListener(`keydown`, renderRequiredTemplate);
 })();
 
