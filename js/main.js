@@ -11,8 +11,8 @@
 
   let count = 0;
 
-  document.addEventListener('keydown', function (event) {
-    const isAltKey = event.altKey;
+  const renderRequiredTemplate = (event) => {
+    const {altKey: isAltKey} = event;
 
     if (isAltKey && event.keyCode === 37) {
       if (count === 0) {
@@ -32,6 +32,8 @@
 
       switchTemplate(count);
     }
-  });
+  };
+
+  document.addEventListener('keydown', renderRequiredTemplate);
 })();
 
