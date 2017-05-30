@@ -1,3 +1,4 @@
+/*
 (function () {
   const templates = document.querySelectorAll('template');
   const wrapper = document.querySelector('main');
@@ -37,3 +38,8 @@
   document.addEventListener('keydown', renderRequiredTemplate);
 })();
 
+*/
+import renderTemplate from './render-template';
+import introTemplate from './module-intro';
+
+renderTemplate(introTemplate());
