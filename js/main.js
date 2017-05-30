@@ -30,7 +30,7 @@
       }
       count++;
 
-      return switchTemplate(count);
+      return true;
     }
 
   };
