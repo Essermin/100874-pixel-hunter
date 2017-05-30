@@ -1,5 +1,6 @@
 import createTemplate from './create-template';
 import renderScreen from './render-template';
+import rulesTemplate from './module-rules';
 
 const greetingsTemplate = () => {
   const template = createTemplate(`
@@ -27,6 +28,10 @@ const greetingsTemplate = () => {
     </div>
   </footer>
    `);
+
+  template.querySelector(`.greeting__continue`).addEventListener(`click`, () => {
+    renderScreen(rulesTemplate());
+  });
 
   return template;
 };
