@@ -21,7 +21,7 @@
 
       count--;
 
-      return switchTemplate(count);
+      switchTemplate(count);
     }
 
     if (isAltKey && event.keyCode === 39) {
@@ -30,9 +30,10 @@
       }
       count++;
 
-      return true;
+      switchTemplate(count);
     }
 
+    return true;
   };
 
   document.addEventListener(`keydown`, renderRequiredTemplate);
