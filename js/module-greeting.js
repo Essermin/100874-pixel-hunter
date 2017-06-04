@@ -1,6 +1,6 @@
 import createTemplate from './create-template';
 import renderScreen from './render-template';
-import rulesTemplate from './module-rules';
+import createRulesTemplate from './module-rules';
 
 const greetingsTemplate = () => {
   const template = createTemplate(`
@@ -30,7 +30,7 @@ const greetingsTemplate = () => {
    `);
 
   template.querySelector(`.greeting__continue`).addEventListener(`click`, () => {
-    renderScreen(rulesTemplate());
+    renderScreen(createRulesTemplate());
   });
 
   return template;

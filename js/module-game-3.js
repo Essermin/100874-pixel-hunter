@@ -1,6 +1,6 @@
 import createTemplate from './create-template';
 import renderScreen from './render-template';
-import statsTemplate from './module-stats';
+import createStatsTemplate from './module-stats';
 import showIntroPage from './show-intro-page';
 
 const game3Template = () => {
@@ -63,7 +63,7 @@ const game3Template = () => {
 
   for (let i = 0; i < gameOptions.length; i++) {
     gameOptions[i].addEventListener(`click`, () => {
-      renderScreen(statsTemplate());
+      renderScreen(createStatsTemplate());
     });
   }
 

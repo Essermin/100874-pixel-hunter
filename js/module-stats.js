@@ -1,7 +1,7 @@
 import createTemplate from './create-template';
 import showIntroPage from './show-intro-page';
 
-const statsTemplate = () => {
+const createStatsTemplate = () => {
   const template = createTemplate(`
   <header class="header">
     <div class="header__back">
@@ -128,4 +128,4 @@ const statsTemplate = () => {
   return template;
 };
 
-export default statsTemplate;
+export default createStatsTemplate;

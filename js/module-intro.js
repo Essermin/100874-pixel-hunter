@@ -2,7 +2,7 @@ import createTemplate from './create-template';
 import renderScreen from './render-template';
 import greetingsTemplate from './module-greeting';
 
-const introTemplate = () => {
+const createIntroTemplate = () => {
   const template = createTemplate(`
       <div id="intro" class="intro">
         <h1 class="intro__asterisk">*</h1>
@@ -17,4 +17,4 @@ const introTemplate = () => {
   return template;
 };
 
-export default introTemplate;
+export default createIntroTemplate;

@@ -3,7 +3,7 @@ import renderScreen from './render-template';
 import game1Template from './module-game-1';
 import showIntroPage from './show-intro-page';
 
-const rulesTemplate = () => {
+const createRulesTemplate = () => {
   const template = createTemplate(`
    <header class="header">
     <div class="header__back">
@@ -61,4 +61,4 @@ const rulesTemplate = () => {
   return template;
 };
 
-export default rulesTemplate;
+export default createRulesTemplate;
